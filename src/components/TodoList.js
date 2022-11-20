@@ -1,13 +1,13 @@
 import React from 'react'
 import TodoItem from './TodoItem';
 
-function TodoList({todos, onCompleted, onDeleteItem}) {
+function TodoList({todos, onComplete, onDeleteItem}) {
   return (
     
     <div>
       {
         todos.map((todo, index) => (
-            <TodoItem key={`todo-${index}`} todo = {todo} onCompleted = {onCompleted} onDeleteItem = {onDeleteItem}/>
+            <TodoItem key={`todo-${index}`} todo = {todo} onComplete = {onComplete} onDeleteItem = {onDeleteItem}/>
         ))
       }
     </div>
