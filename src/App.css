@@ -12,5 +12,14 @@
   float: right;
   background-color: red;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.abtn {
+  background-color: whitesmoke;
+  cursor: pointer;
+  margin-left: 335px;
+  border-radius: 5px;
+
 }
 

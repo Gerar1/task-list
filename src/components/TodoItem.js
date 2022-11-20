@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TodoItem({todo, onCompleted, onDeleteItem}) {
+function TodoItem({todo, onComplete, onDeleteItem}) {
     
     const getStyle = () => {
         return {
@@ -13,10 +13,10 @@ function TodoItem({todo, onCompleted, onDeleteItem}) {
 
   return (
     <div style = {getStyle ()}>
-      <input type= 'checkbox' checked = {todo.completed}/>
-      Tarea= {() => onchange(todo.id)}
+      <input type= 'checkbox' checked = {todo.completed}
+      onChange= {() => onComplete(todo.id)}/>
       {todo.task}
-      <button className='add-btn' onClick = {() => onDeleteItem(todo.id)}>x</button>
+      <button className='add-btn' onClick = {() => onDeleteItem(todo.id)}>Borrar</button>
     </div>
   )
 }
